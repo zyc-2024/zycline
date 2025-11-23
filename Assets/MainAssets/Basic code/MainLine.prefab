@@ -33,7 +33,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7702616948939726379}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -838.6167, y: 650.194, z: -1063.01}
+  m_LocalPosition: {x: -838.86, y: 650.194, z: -1063.147}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -256,9 +256,7 @@ MonoBehaviour:
   ThisLevelDiamondColor: {r: 0.3921569, g: 0.7843137, b: 1, a: 1}
   Start_AniObj: []
   Die_animator: []
-  PercentageOnUI: {fileID: 0}
-  OverTab: {fileID: 0}
-  ContinueTab: {fileID: 0}
+  isFall: 1
   NowForward: {x: 0, y: 0, z: 0}
   Block_Foward1: {x: 0, y: 90, z: 0}
   Block_Foward2: {x: 0, y: 0, z: 0}
@@ -272,6 +270,9 @@ MonoBehaviour:
   Can_Tail: 1
   Over: 0
   canuse: 1
+  PercentageOnUI: {fileID: 0}
+  OverTab: {fileID: 0}
+  ContinueTab: {fileID: 0}
   PerSet: 
   DiaSet: 
   CroSet: 
@@ -284,6 +285,7 @@ MonoBehaviour:
   Crown3: {fileID: 0}
   PickDiamondCount: 0
   PickCrown: 0
+  PC: 0
   Win: 0
 --- !u!114 &7743092359752348377
 MonoBehaviour:

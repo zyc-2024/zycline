@@ -29,6 +29,7 @@ public class MenuSettings : MonoBehaviour
         MainCamera.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
         AudioPlayer.Play();
         LevelModelHolder.transform.position = new Vector3(NowLevelModelX, 0, 0);
+        //LevelModelHolder.transform.position = LevelInfos[NowLevelId].ModelPosition;
     }
 
     public void MassageSeter()

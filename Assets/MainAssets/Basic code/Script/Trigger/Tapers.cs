@@ -6,10 +6,11 @@ public class Tapers : MonoBehaviour
 {
     public GameObject PlayEffect;
     public bool AutoMode;
+    private GameObject a;
+    public Transform b;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -30,7 +31,8 @@ public class Tapers : MonoBehaviour
         {
             if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space))
             {
-                Instantiate(PlayEffect, this.transform.position,this.transform.rotation);
+                a=Instantiate(PlayEffect, this.transform.position,this.transform.rotation);
+                a.transform.SetParent(b);
                 Destroy(this.gameObject);
             }
         }

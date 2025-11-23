@@ -274,9 +274,15 @@ public class MainLine : MonoBehaviour
 		CreateLineBody ();
 	}
 
-	public void CreateLineBody()
+    private Transform tailh;
+    private void Awake()
+    {
+        tailh = new GameObject("linetail").transform;
+    }
+    public void CreateLineBody()
     {
         LineBody = Instantiate(tail, this.transform.position, this.transform.rotation);
+        LineBody.transform.SetParent(tailh);
         if (LineBody != null)
         {
             LastLineBody = LineBody;
