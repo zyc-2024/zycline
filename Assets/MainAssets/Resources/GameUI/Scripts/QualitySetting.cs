@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class QualitySetting : MonoBehaviour
 {
     public Text shower;
-    [HideInInspector] public string vl = "极低", l = "低", m = "中", h = "高", vh = "极高", u = "极致";
+    [HideInInspector] public string vl = "Very Low", l = "Low", m = "Medium", h = "High", vh = "Very High", u = "Ultra";
   [HideInInspector]  public int id;
     // Start is called before the first frame update
     void Start()
@@ -21,32 +21,32 @@ public class QualitySetting : MonoBehaviour
         if(id<=1)
         {
             QualitySettings.SetQualityLevel(0);
-            shower.text = "画质：" + vl;
+            shower.text = "Quality: " + vl;
         }
         if (id == 2)
         {
             QualitySettings.SetQualityLevel(1);
-            shower.text = "画质：" + l;
+            shower.text = "Quality: " + l;
         }
         if (id == 3)
         {
             QualitySettings.SetQualityLevel(2);
-            shower.text = "画质：" + m;
+            shower.text = "Quality: " + m;
         }
         if (id ==4)
         {
             QualitySettings.SetQualityLevel(3);
-            shower.text = "画质：" + h;
+            shower.text = "Quality: " + h;
         }
         if (id == 5)
         {
             QualitySettings.SetQualityLevel(4);
-            shower.text = "画质：" + vh;
+            shower.text = "Quality: " + vh;
         }
         if (id >= 6)
         {
             QualitySettings.SetQualityLevel(5);
-            shower.text = "画质：" + u;
+            shower.text = "Quality: " + u;
         }
         if(id>6)
         {

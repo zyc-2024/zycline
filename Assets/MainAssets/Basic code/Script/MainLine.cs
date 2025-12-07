@@ -16,11 +16,11 @@ public class MainLine : MonoBehaviour
     public GameObject Camera;
    [HideInInspector] public Material LineMaterial,DiamondMaterial;
 
-    //[Header("这个关卡的线和钻石的颜色")]
+    [Header("这个关卡的线和钻石的颜色")]
     public Color ThisLevelLineColor = new Color(0, 1, 0, 1);
     public Color ThisLevelDiamondColor = new Color(0.3921569f, 0.7843137f, 1, 1);
 
-    //[Header("线开始时要播放和线死亡时要停止的帧动画")]
+    [Header("线开始时要播放和线死亡时要停止的帧动画")]
     public Animator[] Start_AniObj;
     public Animator[] Die_animator;
 
